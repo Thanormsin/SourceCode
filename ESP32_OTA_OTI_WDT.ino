@@ -140,7 +140,7 @@ String httpGetString(String URL) {
     }
     else
     {
-      Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+      Serial.printf("[HTTP] GET... failed, error : %s\n", http.errorToString(httpCode).c_str());
     }
     http.end();
   }
@@ -991,7 +991,7 @@ int FirmwareVersionCheck(void) {
       {       
         payload = https.getString(); // save received version    
       } else {
-        Serial.print("error in downloading version file:");
+        Serial.print("error in downloading version file : ");
         Serial.println(httpCode);
       }
       https.end();
@@ -1003,7 +1003,7 @@ int FirmwareVersionCheck(void) {
   {
     payload.trim();
     if (payload.equals(FirmwareVer)) {
-      Serial.printf("\nDevice already on latest firmware version :%s\n", FirmwareVer);
+      Serial.printf("\nDevice already on latest firmware version : %s\n", FirmwareVer);
       return 0;
     } 
     else 
