@@ -1,4 +1,3 @@
-
 //////////////////////////////////////////////////////////
 // Credit to : Farrukh
 // Link to : https://www.youtube.com/watch?v=qCmdUtguwPw&t=321s
@@ -29,7 +28,7 @@ const char* BoardName  = "ESP32-Board-01";                     // Change this if
 #define LED_BUILTIN     2                           // Change this if your board has built-in led on non-standard pin (NodeMCU - 16 or 2)
 #define WDT_TIMEOUT 60                              // Define watchdog timer seconds
 
-String FirmwareVer = {"1.0"};
+String FirmwareVer = {"2.0"};
 #define URL_fw_Version "https://raw.githubusercontent.com/Thanormsin/SourceCode/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/Thanormsin/SourceCode/main/fw.bin"
 
@@ -324,7 +323,6 @@ void WiFireconnect( void * pvParameters ) {
 //            port = port5;
 //            Serial.print("Try Connect to : ");
 //            Serial.print("Master Pool/" + String(host5) );
-//            //Serial.print(host5);
 //            Serial.print("/");
 //            Serial.println(port);
 //          }
